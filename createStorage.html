@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create a storage account</h1>
+    <div>
+        <ul>
+            <li><a href="#">Basics</a></li>
+            <li><a href="#">Advanced</a></li>
+            <li><a href="#">Networking</a></li>
+            <li><a href="#">Data protection</a></li>
+            <li><a href="#">Encryption</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">Review</a></li>
+        </ul>
+    </div>
+
+    <section id="basics"> 
+        <p>Azure Storage is a Microsoft-managed service providing cloud storage that is highly available, secure, durable, scalable, and redundant. Azure Storage includes Azure Blobs (objects), Azure Data Lake Storage Gen2, Azure Files, Azure Queues, and Azure Tables. The cost of your storage account depends on the usage and the options you choose below.Learn more about Azure storage accounts</p>
+
+        <h6>Project details</h6>
+        <p>Select the subscription in which to create the new storage account. Choose a new or existing resource group to organize and manage your storage account together with other resources.</p>
+
+        <form>
+            <label for="subscription">Subscription *</label>
+            <input list="subscription" name="Subscription" id="Subscription">
+            
+            <datalist id="subscription">
+              <option value="Edge">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+
+
+            <label for="Resource">Resource group *</label>
+            <input list="Resource" name="Resource" id="Resource">
+            <datalist id="Resource">
+              <option value="Edge">
+            </datalist>
+            
+            <h6>Instance details</h6>
+            <label for="accountName">Storage account name *</label>
+            <input type="text" id="accountName">
+
+            <label for="Region">Subscription *</label>
+            <input list="Region" name="Region" id="Region">
+            <datalist id="Region">
+              <option value="(US) East US">
+              <option value="(Africa) South Africa North">
+              <option value="(Canada) Canada Central">
+              <option value="(Asia) Central Asia">
+              <option value="(Europe) North Italy">
+            </datalist>
+
+        <label>Performance *</label>
+        <input type="radio">Standard: Recommended for most Scenarios (general-purpose v2 account)
+        <input type="radio">Premium: Recommended for Scenarios that require low latency
+
+        <label for="Redundancy *">Subscription *</label>
+        <input list="Redundancy"  id="Redundancy">
+        <datalist id="Redundancy">
+          <option value="Locally-redundant storage (LRS)">
+          <option value="Geo-redundant storage (GRS)">
+          <option value="Zone-redundant storage (ZRS)">
+          <option value="Geo-zone-redundant storage (GZRS)">
+        </datalist>    
+        </form>
+    </section>
+
+    
+
+    <section id="footer">
+        <button>Previous</button>
+        <button>Next</button>
+    </section>
+</body>
+</html>

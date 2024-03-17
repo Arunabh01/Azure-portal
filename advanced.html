@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="Advanced">
+      <h5>Security</h5>
+      <p>Configure security settings that impact your storage account.</p>
+
+      <label for="rest">Require secure transfer for REST API operations</label>
+      <input type="checkbox" />
+      <br><br>
+      <label for="containers"
+        >Allow enabling anonymous access on individual containers</label
+      >
+      <input type="checkbox" />
+      <br><br>
+      <label for="key">Enable storage account key access</label>
+      <input type="checkbox" />
+      <br><br>
+      <label for="default">Default to Microsoft Entra authorization in the Azure portal</label>
+      <input type="checkbox" />
+      <br><br>
+
+      <label for="tls">Subscription *</label>
+      <input list="tls" id="tls" />
+      <br><br>
+
+      <datalist id="tls">
+        <option value="Version 1.0"></option>
+        <option value="Version 1.1"></option>
+        <option value="Version 1.2"></option>
+      </datalist>
+
+      <h5>Hierarchial Namespace</h5>
+      <p>
+        Hierarchical namespace, complemented by Data Lake Storage Gen2 endpoint,
+        enables file and directory semantics, accelerates big data analytics
+        workloads, and enables access control lists (ACLs)
+      </p>
+
+      <label>Enable Hierarchial namespace</label>
+      <input type="checkbox"/>
+
+      <h5>Access protcols</h5>
+      <p>Blob and Data Lake Gen2 endpoints are provisioned by default <a href="#">Learn more</a></p>
+      <label>Enable SFTP</label>
+      <input type="checkbox">
+      <br><br>
+      <label>Enable network file system v3</label>
+      <input type="checkbox">
+
+      <h5>Blob storage</h5>
+      <label>Allow cross-tenant replication</label>
+      <input type="checkbox">
+      <br><br>
+      <label>Access tier</label>
+      <input type="radio"><b>Hot</b>: Optimized for frequently accessed data and everyday usage scenarios
+      <br>
+      <input type="radio"><b>Cool:</b> Optimized for infrequently accessed data and backup scenarios
+
+      <h5>Azure Files</h5>
+      <label>Enable large file shares</label>
+      <input type="checkbox">
+    </section>
+    <br>
+    <section id="footer">
+        <button>Previous</button>
+        <button>Next : Networking ></button>
+    </section>
+  </body>
+</html>

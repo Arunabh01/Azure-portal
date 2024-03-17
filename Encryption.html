@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="Encryption">
+        <label>Encryption type *</label>
+        <input type="radio"> Microsoft-managed keys (MMK)
+        <input type="radio"> Customer-managed keys (CMK)
+        <br><br>
+        <label>Enable support for customer-managed keys *</label>
+        <input type="radio"> Blobs and files only
+        <input type="radio"> All service types (blobs, files, tables, and queues)
+        <br><br>
+        <label>Encryption key *</label>
+        <input type="radio"> Select a key vault and key
+        <input type="radio"> Enter key from URI
+        <br><br>
+        <label>Subscription</label>
+        <input type="search" placeholder="Filter items..">
+        <br><br>
+        <label>Key store type</label>
+        <input type="radio"> Key vault
+        <input type="radio"> Managed HSM
+        <br><br>
+        <label>Key *</label>
+        <input type="search" placeholder="Select a key">
+        <br><br>
+        <p>User-assigned identity * <a href="#">| Select an identity</a></p>
+        <br>
+        <label> Enable infrastructure encryption</label>
+        <input type="checkbox">
+        <br>
+        <p><b>> Advanced</b></p>
+    </section>
+
+    <section id="footer">
+        <button>Previous</button>
+        <button>Next : Tags ></button>
+    </section>
+</body>
+</html>

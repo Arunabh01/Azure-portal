@@ -1,0 +1,124 @@
+body{
+  /* background: linear-gradient(to right, #49afdb, #6abfdb, #226785); */
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#homeNav{
+  height: 50px;
+  background-color: azure;
+}
+
+li{
+  font-size: 28px;
+  display: inline;
+  padding-left: 15px;
+}
+  
+input#search{
+  width:50%;
+  height:30px;
+}
+
+/*Azure services section's style*/
+
+
+.heading{
+  margin-top: 50px;
+  margin-left: 30px;
+}
+#Services{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+  width: 80%;
+}
+
+
+.Section1Container{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  width:90px;
+  margin: 2px;
+}
+
+/*resource section's style*/
+
+#resources{
+  padding-top: 30px;
+  margin: 50px;
+  width: 80%;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+ 
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+   #navigate{
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  #header{
+    display: flex;
+    margin-top: 30px;
+    padding-left: 10%;
+  }
+
+  #header p{
+    flex: 1;
+  }
+
+  #resourcesDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+  }
+
+  #resourcesDisplay p{
+    text-align: center;
+  }
+
+  #container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #sub,#grp,#all,#Dashboard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    text-align: center;
+    width: 20%;
+    margin: 30px;
+    
+  }

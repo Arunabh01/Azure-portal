@@ -1,0 +1,76 @@
+body{
+    overflow-x:hidden ;
+}
+ul#categories{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+
+ul#categories li{
+    padding-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul#categories li#cat{
+    padding-bottom: 0;
+    font-weight: bold;
+}
+
+#grid-container-create{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 50px 40px 60%;
+    gap: 10px;
+}
+
+#createitem1{
+   grid-column: 1 / span 2;
+   padding-bottom: 20px;
+   padding-left: 25px;
+   /* background-color: red; */
+}
+
+#createitem2{
+    grid-row: 2 / span 4;
+    padding-top: 20px;
+    /* background-color: aqua; */
+}
+
+#createitem3{
+    grid-column: 2/ span 3;
+    padding-top: 20px;
+    padding-left: 30px;
+    /* background-color: blueviolet; */
+}
+
+#createitem4{
+    grid-row: 3 / span 4;
+    grid-column: 2 / span 3;
+    /* background-color: #c5125f; */
+}
+
+#createitem4{
+    display: grid;
+    grid-template-columns: 40% 40%;
+}
+
+#col1, #col2{
+    padding:15px;
+}
+
+#createSearchBar{
+    width: 40%;
+}
+
+input#createSearchBar:focus{
+    border: 3px solid rgb(23, 198, 217);
+}
